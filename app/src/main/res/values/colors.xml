@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryDark">#373737</color>
+    <color name="colorPrimaryLight">#8e8e8e</color>
+    <color name="colorPrimaryLighttwo">#c88e8e8e</color>
+    <color name="colorPrimaryText">#ffffff</color>
+    <color name="colorAccent">#ff1744</color>
+
+    <color name="colorSecondary">#ff1744</color>
+    <color name="colorSecondaryDark">#c4001d</color>
+    <color name="colorSecondaryLight">#ff616f</color>
+    <color name="colorSecondaryText">#000000</color>
+
+    <color name="background_celeste">#7790fd</color>
+    <color name="background_rojo">#be2830</color>
+
+    <color name="colorRadioButtonOn">#2980b9</color>
+    <color name="colorRadioButtonOff">#3498db</color>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_lostconexion"
+        style="@style/SubTitulo"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/lostconnection" />
+
+    <ImageView
+        android:id="@+id/iv_lostconexion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/tv_lostconexion"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_settings_input_antenna_24dp" />
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_error_outline_24dp"
+        android:id="@+id/iv_alertlost"
+        android:layout_alignTop="@+id/iv_lostconexion"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bt_refech_lostconnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lostconexion"
+        android:layout_centerHorizontal="true"
+        android:text="Volver a intentar" />
+</RelativeLayout>

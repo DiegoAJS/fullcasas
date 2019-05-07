@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_item_noticia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagen_noticia"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/texto_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imagen_noticia"
+                android:layout_alignEnd="@+id/imagen_noticia"
+                android:text="11/12/2016"
+                android:textColor="#FFFFFF"
+                android:padding="3dp"
+                style="@style/Contenido"
+                android:background="@color/colorPrimaryLight"
+                android:layout_alignRight="@+id/imagen_noticia" />
+
+            <TextView
+                android:id="@+id/franja_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignBottom="@+id/imagen_noticia"
+                android:background="@color/colorPrimaryDark"
+                android:alpha="0.85"/>
+
+            <TextView
+                android:id="@+id/texto_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignBottom="@+id/imagen_noticia"
+                style="@style/SubTitulo_2"
+                android:text="Titulo"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/texto_contenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagen_noticia"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                style="@style/Contenido"
+                android:text="Contenido dentro de la noticia"
+                android:maxLines="3"
+                android:minLines="2"
+                android:textColor="@color/colorSecondaryText"/>
+
+            <TextView
+                android:id="@+id/texto_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texto_contenido"
+                android:layout_alignStart="@id/texto_titulo"
+                android:text="Por:"
+                style="@style/Contenido"
+                android:textColor="@color/colorAccent"
+                android:layout_alignLeft="@id/texto_titulo" />
+
+            <TextView
+                android:id="@+id/texto_autor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/texto_by"
+                android:layout_toEndOf="@+id/texto_by"
+                android:text="AUTHOR"
+                style="@style/Contenido"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/texto_by" />
+
+            <ImageButton
+                android:id="@+id/boton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_redondear"
+                android:src="@drawable/ic_chevron_right"
+                android:layout_below="@+id/texto_contenido"
+                android:layout_alignEnd="@+id/franja_titulo"
+                android:elevation="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignRight="@+id/franja_titulo" />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

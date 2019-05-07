@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="imagen_logo">54dp</dimen>
+
+    <dimen name="size_fab">56dp</dimen>
+    <dimen name="fab_margin">56dp</dimen>
+    <dimen name="headerbar_elevation">4dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+
+</resources>
